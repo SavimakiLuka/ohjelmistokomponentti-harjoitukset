@@ -1,0 +1,392 @@
+body {
+    margin: 0
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/fontti/Lato-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nettisivu {
+    display: flex;
+    flex-direction: column;
+}
+
+.yläpalkki {
+    display: flex;
+    flex-direction: column;
+}
+
+.yläpalkki__ylärivi {
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1px #E8E8E8;
+    box-shadow: 0px 2px 4px #E8E8E8;
+    padding-left: 120px;
+    padding-right: 120px;
+    align-items: flex-start;
+    height: 45px;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 30px;
+}
+
+.yläpalkki__ylärivi__otsikko {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+}
+
+.yläpalkki__ylärivi__otsikko__ikoni {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    background-color: #00B4C7;
+    width: 40px;
+    height: 40px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 20px;
+    position: relative;
+    top: -12px;
+}
+
+.yläpalkki__ylärivi__otsikko__teksti {
+    display: flex;
+    flex-direction: row;
+}
+
+.yläpalkki__ylärivi__pikavalikko {
+    display: flex;
+    flex-direction: row;
+    margin-right: 80px;
+    justify-content: center;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.yläpalkki__ylärivi__pikavalikko__aihe {
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+}
+
+.yläpalkki__ylärivi__toiminnot {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 30px;
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.yläpalkki__ylärivi__toiminto {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
+.yläpalkki__ylärivi__toiminto__teksti {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.yläpalkki__ylärivi__toiminto__ikoni {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.yläpalkki__alarivi {
+    display: flex;
+    flex-direction: row;
+    padding: 0 22px 0 22px;
+    height: 95px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.yläpalkki__alarivi__uutinen {
+    display: flex;
+    flex-direction: column;
+    padding-right: 8px;
+    overflow: hidden;
+}
+
+.yläpalkki__alarivi__uutinen {
+    box-shadow: 1100px 50px 100px white;
+
+}
+
+.yläpalkki__alarivi__uutinen__alku {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.yläpalkki__alarivi__uutinen__alku:after {
+    content: '';
+    flex: auto;
+    border-top: solid 1px #E8E8E8;
+    margin: 0 1rem;
+}
+
+.yläpalkki__alarivi__uutinen__alku__ikoni {
+    display: flex;
+    flex-direction: row;
+    height: 11px;
+    width: 11px;
+    background-color: #E90E44;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.yläpalkki__alarivi__uutinen__aika {
+    display: flex;
+    flex-direction: row;
+
+    color: #7C806E;
+    font-size: 14px;
+    align-items: center;
+}
+
+.yläpalkki__alarivi__uutinen__aika:after {
+    content: '';
+    flex: auto;
+    border-top: solid 1px #E8E8E8;
+    margin: 0 1rem;
+}
+
+.yläpalkki__alarivi__uutinen__otsikko {
+    display: flex;
+    flex-direction: row;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.yläpalkki__alarivi__uutinen__nuolet {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+.yläpalkki__alarivi__uutinen__vasennuoli {
+    display: flex;
+    flex-direction: row;
+    width: 15px;
+}
+
+.yläpalkki__alarivi__uutinen__oikeanuoli {
+    display: flex;
+    flex-direction: row;
+    width: 15px;
+}
+
+.sivu {
+    display: flex;
+    flex-direction: row;
+    background-color: #F1F2F4;
+    padding: 38px 100px 0 120px;
+}
+
+.sivu__vasenpuoli {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivu__vasenpuoli__uutinen {
+    display: flex;
+    flex-direction: column;
+}
+
+.sivu__vasenpuoli__uutinen__kuva {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    height: 353px;
+    background-image: url('tausta/tausta-pinkki-2.png');
+    background-repeat: repeat;
+    background-size: 20px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 240px;
+    width: 640px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__tiedot {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__tiedot__aihe {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__tiedot__otsikko {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__lisätiedot {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__lisätiedot__kellonaika {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__lisätiedot__kommentit {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__lisätiedot__kommentit__ikoni {
+    display: flex;
+    flex-direction: row;
+    width: 20px;
+    padding: 0 2px 100px 10px;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__lisätiedot__kommentit__määrä {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivu__vasenpuoli__uutinen__alaosa__lisätiedot__kommentit__teksti {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivu__vasenpuoli__uutinen__otsikko {
+    padding-left: 20px;
+    font-size: 24px;
+}
+
+.sivu__vasenpuoli__uutinen__otsikko__alue{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 640px;
+    background-color: #E90E44;
+    color: #E8E8E8;
+    justify-content: flex-start;
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0;
+    position: relative;
+    top: 5px;
+}
+
+.sivu__oikeapuoli {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 60px;
+}
+
+.sivu__oikeapuoli__uutiset {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.sivu__oikeapuoli__uutiset__otsikko {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 20px 0;
+}
+
+.sivu__oikeapuoli__uutinen {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.sivu__oikeapuoli__uutinen__ikoni {
+    display: flex;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.sivu__oikeapuoli__uutinen__tiedot {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.sivu__oikeapuoli__uutinen__aihe {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+.sivu__oikeapuoli__uutinen__otsikko {
+    display: flex;
+    flex-direction: row;
+    margin-left: 35px;
+}
+
+.sivu__oikeapuoli__uutinen__otsikko:after {
+    content: '';
+    flex: auto;
+    border-left: solid 1px #DEDFE1;
+    position: relative;
+    right: 328px;
+    top: 15px;
+}
+
+.sivu__oikeapuoli__uutinen__aika {
+    display: flex;
+    flex-direction: row;
+}
+
+.sivu__oikeapuoli__uutinen__aika:after {
+    content: '';
+    flex: auto;
+    border-left: solid 1px #DEDFE1;
+    position: relative;
+    right: 18px;
+    top: 5px;
+}
